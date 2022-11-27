@@ -1,0 +1,107 @@
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+/* make fade */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.mySlides {
+  height: 505px;
+  position: relative;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* make h1 welcome to fable */
+.mySlides__h1 {
+  font-family: "Lobster", cursive;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  font-size: 5em;
+  color: #fff;
+  animation: 5s anim-lineUp ease-out;
+  animation-fill-mode: both;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-30%);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(-50%);
+  }
+
+  90% {
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-100%);
+  }
+}
+
+.wrapper__p {
+  opacity: 0;
+  animation: 1s showButtons;
+  animation-delay: var(--delay);
+  animation-fill-mode: both;
+}
+
+.btn {
+  border-radius: 5px;
+  background-color: blueviolet;
+  color: #fff;
+  height: 40px;
+  padding: 0 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  opacity: 0;
+  animation: 1s showButtons;
+  animation-delay: var(--delay);
+  animation-fill-mode: both;
+}
+
+@keyframes showButtons {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-100%);
+  }
+}

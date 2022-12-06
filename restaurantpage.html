@@ -26,16 +26,16 @@
             <a href="#">HOME</a>
           </li>
           <li class="header-wraper__nav__ul__li">
-            <a href="#">MENU</a>
+            <a href="#menu">MENU</a>
           </li>
           <li class="header-wraper__nav__ul__li">
             <a href="#">SERVICES</a>
           </li>
           <li class="header-wraper__nav__ul__li">
-            <a href="#">ABOUT US</a>
+            <a href="#aboutus">ABOUT US</a>
           </li>
           <li class="header-wraper__nav__ul__li">
-            <a href="#">CONTACT</a>
+            <a href="#informationid">CONTACT</a>
           </li>
           <li class="header-wraper__nav__ul__li">
             <a href="#">LOG OUT</a>
@@ -52,10 +52,12 @@
 
     <section class="section">
       <div class="section__maindiv">
-        <div>
+        <div class="section__maindiv__span">
           <span>მთავარი </span>
           <span> დამახსოვრებული 3</span>
-          <span> არჩეული 2</span>
+          <i class="fa-solid fa-heart"></i>
+          <span class="spann"> არჩეული 2</span>
+          <i class="fa-solid fa-square-check"></i>
         </div>
         <div class="section__maindiv3">
           <div class="section_left">
@@ -68,10 +70,10 @@
             </div>
             <div class="botton__maindiv">
               <div class="botton__img1">
-                <img src="images/image5.webp" alt="" />
+                <img src="images/image6.webp" alt="" />
               </div>
               <div class="botton__img2">
-                <img src="images/image6.webp" alt="" />
+                <img src="images/image7.jpg" alt="" />
                 <span class="botton__img2__span">+5</span>
               </div>
             </div>
@@ -86,13 +88,13 @@
           <div class="section1__maindiv1__left__block">
             <div class="section1__maindiv1__left1">
               <div class="section1__maindiv1__left__spandiv">
-                <span>გ</span>
+                <span>ქ</span>
               </div>
 
               <div class="section1__maindiv1__left__h2">
                 <br />
-                <h2>რესტორანი "გემო"</h2>
-                <h3>ბელიაშვილის 12, მარჯვენა სანაპირო, თბილისი, საქართველო</h3>
+                <h2>რესტორანი "ქიმერიონი"</h2>
+                <h3>ნინოშვილის 30, ბათუმი</h3>
               </div>
             </div>
 
@@ -108,34 +110,36 @@
           <br />
           <div class="line"></div>
           <br />
-          <p class="p1">ჩვენს შესახებ</p>
+          <p class="p1" id="aboutus">ჩვენს შესახებ</p>
           <br />
           <div class="aboutus">
             <span
-              >რესტორანი გემო ახალი რესტორანია რომელიც გვთავაზობს მაღალი
+              >რესტორანი ქიმერიონი ახალი რესტორანია რომელიც გვთავაზობს მაღალი
               სტანდარტების მომსახურებას. რესტორანი შედგება 4 დარბაზისაგან:
               ქართული დარბაზი, სარიტუალო დარბაზი, ევროპული დარბაზი და ლუდის
               დარბაზი. ოთხივე დარბაზი უჩვეულო და ორიგინალური დიზაინით არის
-              შექმნილი. რესტორანი “ბარაკონი” გვთავაზობს საუკეთესო ხარისხის,
+              შექმნილი. რესტორანი “ქიმერიონი” გვთავაზობს საუკეთესო ხარისხის,
               ახალი პროდუქტებისგან საერთაშორისო სტანდარტების დაცვით დამზადებულ
               კერძებს, საახალწლო პროგრამებს, მუსიკალურ საღამოებს, ალაფურშეტებს.
               სრულ საქორწინო მომსახურებას.</span
             >
           </div>
 
-          <h2 class="menuh2">მენიუ</h2>
+          <h2 class="menuh2" id="menu">მენიუ</h2>
           <br />
-          <a href="menus.html" target="_blank" class="clickmenu"
-            >მენიუს სანახავად დააკლიკეთ</a
-          >
+          <div class="menus">
+            <a href="menus.html" target="_blank" class="clickmenu"
+              >მენიუს სანახავად დააკლიკეთ</a
+            >
+          </div>
         </div>
         <div class="section1__maindiv1__right">
           <div class="mainspan1">
-            <span>მოითხოვე სერვისი</span>
+            <span class="title">მოითხოვე სერვისი</span>
             <div class="line2"></div>
-            <div class="span2">
+            <a href="#popup1" class="span2">
               <span>დაჯავშნა</span>
-            </div>
+            </a>
             <div class="span3">
               <span>არჩევა</span>
             </div>
@@ -158,7 +162,130 @@
 
     <section class="section2">
       <h2>სერვისები</h2>
+      <div class="services">
+        <div>
+          <i class="fa-solid fa-circle-check"></i>
+          <p>პარკინგი</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-circle-check"></i>
+          <p>ვერანდა</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-circle-check"></i>
+          <p>მოსაწევი ადგილი</p>
+        </div>
+      </div>
     </section>
+
+    <footer>
+      <div class="footer-maindiv">
+        <div class="information" id="informationid">
+          <div>
+            <h2>საკონტაქტო ინფორმაცია</h2>
+            <div class="information-div">
+              <i class="fa-solid fa-location-dot iconn"></i>
+              <a href="https://goo.gl/maps/mjCi8fK5Lq8rFoLN7"
+                >ნინოშვილის 30, ბათუმი</a
+              >
+            </div>
+          </div>
+          <div>
+            <div class="information-div">
+              <i class="fa-solid fa-envelope iconn"></i>
+              <a href="mailto: kimerioni@gmail.com">kimerioni@gmail.com</a>
+            </div>
+          </div>
+          <div class="information-div">
+            <div>
+              <i class="fa-solid fa-phone-volume iconn"></i>
+              <a href="tel:548 25 48 79">574141441</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="mapdiv">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4929.857019534624!2d41.635000362276564!3d41.6513152934355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sge!4v1670364762118!5m2!1sen!2sge"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </footer>
+    <div id="popup1" class="overlay">
+      <div class="popup">
+        <h2>BOOK A TABLE</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <form class="contact" action="" method="post">
+            <div class="your-name">
+              <input
+                type="text"
+                name="name"
+                class="text-box"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="LastName"
+                name="LastName"
+                class="lastname"
+                placeholder="Your last Name"
+                required
+              />
+            </div>
+            <div class="icon-wraper">
+              <div>
+                <i class="fa-solid fa-calendar-days"></i>
+                <input
+                  type="Date"
+                  name="Date"
+                  class="Date"
+                  placeholder="Date"
+                  required
+                />
+              </div>
+              <div>
+                <i class="fa-regular fa-clock"></i>
+                <input
+                  type="Time"
+                  name="Time"
+                  class="Time"
+                  placeholder="Time"
+                  required
+                />
+              </div>
+              <div>
+                <i class="fa-regular fa-phone-volume"></i>
+                <input
+                  type="Phone"
+                  name="Phone"
+                  class="Phone"
+                  placeholder="Phone"
+                  required
+                />
+              </div>
+            </div>
+            <textarea
+              name="message"
+              class="message"
+              placeholder="Your Message"
+              rows="5"
+              required
+            ></textarea>
+          </form>
+          <input type="submit" name="submit" class="send-btn" value="send" />
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>

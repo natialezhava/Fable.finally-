@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>გემო</title>
+    <title>ქიმერიონი</title>
+    <link rel="icon" type="image/x-icon" href="images/icon.png" />
+
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link
@@ -16,40 +18,44 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body id="restaurantpage-body">
     <header>
-      <img class="header-wraper__img" src="images/image4.png" alt="icon" />
+      <nav class="navbar">
+        <a href="index.html"
+          ><img src="images/image4.jpg" class="nav-branding"
+        /></a>
 
-      <nav class="header-wraper__nav">
-        <ul class="header-wraper__nav__ul">
-          <li class="header-wraper__nav__ul__li">
-            <a href="#">HOME</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="listpage.html" class="nav-link">HOME</a>
           </li>
-          <li class="header-wraper__nav__ul__li">
-            <a href="#menu">MENU</a>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">MENU</a>
           </li>
-          <li class="header-wraper__nav__ul__li">
-            <a href="#">SERVICES</a>
+          <li class="nav-item">
+            <a href="#" class="nav-link auth">SERVICES</a>
           </li>
-          <li class="header-wraper__nav__ul__li">
-            <a href="#aboutus">ABOUT US</a>
+          <!-- <div class="line"></div> -->
+          <li class="nav-item">
+            <a href="#" class="nav-link auth">ABOUT US</a>
           </li>
-          <li class="header-wraper__nav__ul__li">
-            <a href="#informationid">CONTACT</a>
+          <li class="nav-item">
+            <a href="#" class="nav-link auth">CONTACT</a>
           </li>
-          <li class="header-wraper__nav__ul__li">
-            <a href="#">LOG OUT</a>
-
-            <br />
-
-            <div class="header-wraper__nav__ul__li__div">
-              <span class="header-wraper__nav__ul__li__span">NL</span>
-            </div>
+          <li class="nav-item">
+            <a href="#" class="nav-link auth">LOG OUT</a>
           </li>
+          <div class="header-wraper__nav__ul__li__div">
+            <span class="header-wraper__nav__ul__li__span">NL</span>
+          </div>
         </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
     </header>
-
     <section class="section">
       <div class="section__maindiv">
         <div class="section__maindiv__span">
@@ -132,6 +138,46 @@
               >მენიუს სანახავად დააკლიკეთ</a
             >
           </div>
+          <div class="services-wraper">
+            <h2>სერვისები</h2>
+            <h3>მთავარი შეფ მზარეული</h3>
+            <nav>
+              <ul>
+                <li class="services-div">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <p>პარკინგი</p>
+                </li>
+                <li class="services-div">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <p>ვერანდა</p>
+                </li>
+                <li class="services-div">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <p>ცოცხალი მუსიკა</p>
+                </li>
+                <li class="services-div">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <p>ბარი</p>
+                </li>
+                <li class="services-div">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <p>ბუხარი</p>
+                </li>
+                <li class="services-div">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <p>საცეკვაო დარბაზი</p>
+                </li>
+                <li class="services-div">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <p>სეზონური ივენთები</p>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="block">
+              <img src="images/chiefimage.jpg" alt="" />
+            </div>
+          </div>
         </div>
         <div class="section1__maindiv1__right">
           <div class="mainspan1">
@@ -160,52 +206,36 @@
       </div>
     </section>
 
-    <section class="section2">
-      <h2>სერვისები</h2>
-      <div class="services">
-        <div>
-          <i class="fa-solid fa-circle-check"></i>
-          <p>პარკინგი</p>
-        </div>
-        <div>
-          <i class="fa-solid fa-circle-check"></i>
-          <p>ვერანდა</p>
-        </div>
-        <div>
-          <i class="fa-solid fa-circle-check"></i>
-          <p>მოსაწევი ადგილი</p>
-        </div>
-      </div>
-    </section>
-
     <footer>
       <div class="footer-maindiv">
         <div class="information" id="informationid">
-          <div>
-            <h2>საკონტაქტო ინფორმაცია</h2>
+          <div class="information-left-div">
             <div class="information-div">
               <i class="fa-solid fa-location-dot iconn"></i>
               <a href="https://goo.gl/maps/mjCi8fK5Lq8rFoLN7"
                 >ნინოშვილის 30, ბათუმი</a
               >
             </div>
-          </div>
-          <div>
-            <div class="information-div">
-              <i class="fa-solid fa-envelope iconn"></i>
-              <a href="mailto: kimerioni@gmail.com">kimerioni@gmail.com</a>
-            </div>
-          </div>
-          <div class="information-div">
+
             <div>
+              <div class="information-div">
+                <i class="fa-solid fa-envelope iconn"></i>
+                <a href="mailto: kimerioni@gmail.com">kimerioni@gmail.com</a>
+              </div>
+            </div>
+            <div class="information-div">
               <i class="fa-solid fa-phone-volume iconn"></i>
               <a href="tel:548 25 48 79">574141441</a>
             </div>
           </div>
-        </div>
-        <div>
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-instagram"></i>
+          <div class="information-right-div">
+            <a href="https://www.facebook.com/profile.php?id=100063690440045"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
         </div>
         <div class="mapdiv">
           <iframe
@@ -287,6 +317,6 @@
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="listpage.js"></script>
   </body>
 </html>

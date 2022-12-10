@@ -1,0 +1,198 @@
+/* add header */
+header {
+  background-color: #f7f7f7;
+  position: fixed;
+  width: 100%;
+}
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 24px;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-branding {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+  color: #5863f8;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(2, 0, 0);
+}
+.line {
+  width: 2px;
+  height: 20px;
+  background-color: black;
+  margin: 0 15px;
+}
+.nav-link :nth-child(3) {
+  margin-left: 50px;
+}
+
+@media (max-width: 840px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .line {
+    display: none;
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #f8eeee;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 444;
+  }
+  .nav-item {
+    margin: 16px 0;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+}
+.contact-section {
+  width: 100%;
+  /* margin-top: 50px; */
+  font-family: "Rubik", sans-serif;
+  min-height: 100vh;
+  background-image: url(https://www.socialinform.ru/wp-content/uploads/2022/03/rabota-3.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-info {
+  color: #140000;
+  max-width: 500px;
+  line-height: 45px;
+  padding-left: 50px;
+  font-size: 18px;
+  margin-right: 100px;
+}
+.contact-info i {
+  margin-right: 20px;
+  font-size: 25px;
+}
+.contact-form {
+  max-width: 700px;
+  margin-right: 50px;
+}
+.contact-info,
+.contact-form {
+  flex: i;
+}
+.hours {
+  display: flex;
+}
+.contact-form h2 {
+  color: #140000;
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  margin-bottom: 38px;
+}
+.contact-form .text-box {
+  background: #000;
+  color: #fff;
+  border: none;
+  width: calc(50% - 10px);
+  height: 50px;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+.contact-form .text-box:first-child {
+  margin-right: 15px;
+}
+.contact-form textarea {
+  background: #000;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+.contact-form .send-btn {
+  float: right;
+  background: royalblue;
+  color: #fff;
+  border: none;
+  width: 120px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  transition-property: background;
+}
+.contact-form .send-btn:hover {
+  background: royalblue;
+}
+
+@media (max-width: 950px) {
+  .contact-section {
+    flex-direction: column;
+  }
+  .contact-info,
+  .contact-form {
+    margin: 30px 50px;
+  }
+  .contact-form h2 {
+    font-size: 30px;
+  }
+  .contact-form .text-box {
+    width: 100%;
+  }
+}

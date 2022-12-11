@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap");
+
 html {
   scroll-behavior: smooth;
 }
@@ -122,66 +124,15 @@ html {
     transform: translateY(-100%);
   }
 }
-
+#restaurantpage-body {
+  background-color: antiquewhite;
+}
 /* make restaurant pages */
 body {
   position: relative;
   font-family: "Noto Sans", sans-serif;
 }
 
-/* add header */
-/* header {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  vertical-align: middle;
-  background-color: #f6f7f6;
-  height: 70px;
-  box-shadow: 0 5px 10px #0000004f;
-  position: sticky;
-  top: 0;
-  z-index: 9;
-}
-.header-wraper__img {
-  width: 50px;
-  height: 50px;
-  vertical-align: middle;
-}
-.header-wraper__nav__ul {
-  display: flex;
-  vertical-align: middle;
-  align-items: center;
-  justify-content: space-around;
-}
-.header-wraper__nav__ul__li {
-  margin-right: 50px;
-}
-.header-wraper__nav__ul__li:nth-child(5) {
-  margin-right: 100px;
-}
-.header-wraper__nav__ul__li:nth-child(6) {
-  margin-right: 0;
-  align-items: center;
-  display: flex;
-}
-.header-wraper__nav__ul__li__div {
-  background-color: blue;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  vertical-align: middle;
-  align-items: center;
-  margin-left: 5px;
-}
-.header-wraper__nav__ul__li__span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 50%;
-  left: 50%;
-  padding-top: 10px;
-} */
 /* add header */
 header {
   background-color: #f7f7f7;
@@ -200,7 +151,6 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 60px;
 }
 
 .nav-branding {
@@ -212,6 +162,9 @@ header {
   transition: 0.7s ease;
 }
 
+.nav-item + .nav-item {
+  margin-left: 40px;
+}
 .nav-link:hover {
   color: #5863f8;
 }
@@ -256,9 +209,17 @@ header {
   padding-top: 10px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .hamburger {
     display: block;
+  }
+
+  .navbar {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 0 32px;
+    min-height: 30px;
   }
   .line {
     display: none;
@@ -299,7 +260,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 20px 0;
-  margin-top: -19px;
+  margin-top: -21px;
   padding-top: 90px;
 }
 .section__maindiv__span span:nth-child(1) {
@@ -539,7 +500,8 @@ header {
 }
 
 .aboutus {
-  width: 800px;
+  width: 100%;
+
   margin-left: 30px;
   line-height: 30px;
 }
@@ -717,11 +679,6 @@ header {
   top: 0;
 }
 
-.active,
-.dot:hover {
-  background-color: #717171;
-}
-
 /* Fading animation */
 .fade {
   animation-name: fade;
@@ -808,13 +765,14 @@ header {
 }
 .mapdiv {
   height: 500px;
-  width: 1100px;
+  max-width: 1100px;
+  margin: auto;
   text-align: center;
 }
 .mapdiv iframe {
   width: 100%;
   text-align: center;
-  margin-left: 150px;
+  /* margin-left: 150px; */
   padding-top: 20px;
 }
 
@@ -827,7 +785,7 @@ header {
 .popup {
   width: 100%;
   height: 100%;
-  background-color: rgb(204, 82, 82);
+  background-color: rgb(199, 178, 178);
   opacity: 1;
 }
 .overlay {
@@ -843,11 +801,34 @@ header {
   visibility: visible;
   opacity: 1;
 }
-
+.your-name {
+  margin-bottom: 10px;
+}
+.text-box {
+  border-radius: 5px;
+}
+.lastname {
+  border-radius: 5px;
+}
+.Date {
+  border-radius: 5px;
+}
+.Time {
+  border-radius: 5px;
+}
+.Phone {
+  border-radius: 5px;
+}
+.icon-wraper {
+  margin-bottom: 10px;
+}
+.message {
+  border-radius: 5px;
+}
 .popup {
   margin: 70px auto;
   padding: 20px;
-  background: rgb(204, 159, 159);
+  background: rgb(211, 202, 202);
   border-radius: 5px;
   width: 100%;
   position: relative;
@@ -871,7 +852,7 @@ header {
   color: #333;
 }
 .popup .close:hover {
-  color: #06d85f;
+  color: #000000;
 }
 .popup .content {
   /* max-height: 30%; */
@@ -882,19 +863,50 @@ header {
   width: 100%;
 }
 .message {
-  width: 100%;
+  width: 423px;
 }
 .services {
   display: flex;
 }
-#restaurantpage-body {
-  /* background-image: url(../images/batumi3.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+/* ----- */
+#ul-list {
+  overflow: hidden;
+  margin-top: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  color: rgb(244, 94, 0);
+  font-size: 15px;
+  font-family: "BPG Nino Mtavruli";
+  font-weight: bold;
+}
+.our-customers {
+  margin-top: 120px;
+  max-width: 1600px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 20px 80px 20px 250px;
+  margin-top: -100px;
 }
 
-/* make batumi page  */
+.image-block {
+  max-width: 200px;
+  height: 150px;
+  margin-right: 120px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#loadPrev,
+#loadNext {
+  border-radius: 10px;
+  color: #f05f25;
+  cursor: pointer;
+  margin-top: 20px;
+  border: none;
+  font-size: 25px;
+  font-family: "BPG Arial";
+}
+#loadNext {
+  margin-left: 20px;
+}
